@@ -1,0 +1,35 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true" loaded="onLoaded">
+	<ScrollView orientation="vertical">
+		<StackLayout orientation="vertical" class="page__content">
+			<StackLayout orientation="vertical" class="formInput">
+				<Image src="~/images/logo.png" stretch="aspectFit" horizontalAlignment="center" />
+			</StackLayout>
+			<StackLayout orientation="vertical" class="formInput">
+				<Label class="frmLbl" text="Full name" textWrap="true" />
+				<TextField class="frmInput" id="itf_fnm" autocapitalizationType = "words" returnKeyType = "next" focus="focus()" />
+				<Label class="errLbl" id="lbl_fnm" text="" textWrap="true" />
+			</StackLayout>
+			<StackLayout orientation="vertical" class="formInput">
+				<Label class="frmLbl" text="Company" textWrap="true" />
+				<TextField class="frmInput" id="itf_cnm" autocapitalizationType = "words" returnKeyType = "next" />
+				<Label class="errLbl" id="lbl_cnm" text="" textWrap="true" />
+			</StackLayout>
+			<StackLayout orientation="vertical" class="formInput">
+				<Label class="frmLbl" text="Phone/Mobile" textWrap="true" />
+				<TextField class="frmInput" id="itf_pno" keyboardType = "phone" returnKeyType = "next" />
+				<Label class="errLbl"  id="lbl_pno"  text=""  textWrap="true" />
+			</StackLayout>
+			<StackLayout orientation="vertical" class="formInput">
+				<Label class="frmLbl" text="ID Card #" textWrap="true" />
+				<TextField class="frmInput" id="itf_ino" autocapitalizationType = "allcharacters" returnKeyType = "next" />
+				<Label class="errLbl" id="lbl_ino" text="" textWrap="true" />
+			</StackLayout>
+			<StackLayout orientation="vertical" class="formInput">
+				<Label class="frmLbl" text="Person Visiting" textWrap="true" />
+				<TextField class="frmInput" id="itf_vnm" autocapitalizationType = "words" returnKeyType = "done" />
+				<Label class="errLbl" id="lbl_vnm" text="" textWrap="true" />
+			</StackLayout>
+			<Button class="btn" text="Save" verticalAlignment="bottom" tap="{{ onTap }}" />
+		</StackLayout>
+	</ScrollView>
+</Page>

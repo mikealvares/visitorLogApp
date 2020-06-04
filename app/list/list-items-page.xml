@@ -1,0 +1,60 @@
+<Page
+    navigatingTo="onNavigatingTo"  
+    loaded="onPageLoaded"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="black">
+        <Label class="whiteText" text="Visitors" />
+    </ActionBar>
+    <ScrollView orientation="vertical">
+        <ListView items="{{ items }}" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <GridLayout rows="*, *, *" columns="*, *" class="cars-list__item-content">
+                    <Label text="{{ fnm }}" class="listName" />
+                    <Label text="{{ rdt }}" class="listDate" col="1" horizontalAlignment="right" />
+                    <StackLayout row="1" class="hr" colSpan="2" />
+                    <StackLayout row="2" col="0" verticalAlignment="center">
+                        <Label class="p-b-10">
+                            <FormattedString ios:fontFamily="system">
+                                <Span text="&#xf1ad;    " class="fas icon" />
+                                <Span class="listLbl" text="{{ cnm }}" />
+                            </FormattedString>
+                        </Label>
+                        <Label class="p-b-10">
+                            <FormattedString ios:fontFamily="system">
+                                <Span text="&#xf508;   " class="fas icon" />
+                                <Span class="listLbl" text="{{ vnm }}" />
+                            </FormattedString>
+                        </Label>
+                        <Label class="p-b-10">
+                            <FormattedString ios:fontFamily="system">
+                                <Span text="&#xf017;   " class="fas icon" />
+                                <Span class="listLbl" text="{{ itm }}" />
+                            </FormattedString>
+                        </Label>
+                    </StackLayout>
+                    <StackLayout row="2" col="1" verticalAlignment="center">
+                        <Label class="p-b-10">
+                            <FormattedString ios:fontFamily="system">
+                                <Span text="&#xf3cd;    " class="fas icon" />
+                                <Span class="listLbl" text="{{ pno }}" />
+                            </FormattedString>
+                        </Label>
+                        <Label class="p-b-10">
+                            <FormattedString ios:fontFamily="system">
+                                <Span text="&#xf2c2;    " class="fas icon" />
+                                <Span class="listLbl" text="{{ ino }}" />
+                            </FormattedString>
+                        </Label>
+                        <Label class="p-b-10">
+                            <FormattedString ios:fontFamily="system">
+                                <Span text="&#xf017;   " class="fas icon" />
+                                <Span class="listLbl" text="{{ otm }}" />
+                            </FormattedString>
+                        </Label>
+                    </StackLayout>
+                </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </ScrollView>
+</Page>

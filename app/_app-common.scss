@@ -1,0 +1,138 @@
+@import "~@nativescript/theme/core";
+//@import "~@nativescript/theme/blue";
+
+// black #1a1a1a
+// red #f44336
+// background: fafafa
+// Font icon class
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+    font-weight: 400;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+
+Tabs TabStrip{
+    font-size: 14;
+    font-weight: bold;
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+}
+
+Tabs TabStripItem Label {
+    font-size: 14;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+BottomNavigation TabStripItem Label {
+    font-size: 12;
+    text-transform: uppercase;
+}
+
+Tabs TabStripItem,
+BottomNavigation TabStripItem {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+Tabs TabStripItem:active,
+BottomNavigation TabStripItem:active {
+    color: #FFFFFF;
+}
+
+TabContentItem {
+    background-color: rgb(156, 138, 138);
+    color: #FFFFFF;
+}
+
+// Common page class
+.page__content {
+    &-icon,
+    &-placeholder {
+        color: #424242;
+        font-size: 20;
+        vertical-align: center;
+        horizontal-align: center;
+    }
+
+    &-icon {
+        font-size: 72;
+        vertical-align: top;
+        margin-top: 20%;
+    }
+}
+
+.page__content{
+    background-color: #ffffff;
+    margin-top: 25;
+    padding: 5;
+}
+
+.black {
+    background-color: #1a1a1a;
+}
+
+.whiteText{
+    color:#ffffff;
+    font-weight: bold;
+}
+.frmLbl{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left:15;
+    color:#1a1a1a
+}
+
+.errLbl{
+    color:#ff000f;
+    font-size: 12px;
+    padding-left:15;
+}
+
+.red{
+    color:#f44336;
+}
+
+.frmInput{
+    background-color: #cccccc;
+    border: 2px solid #1a1a1a;
+    border-radius: 5px;
+    padding-left:5;
+    font-size: 14px;
+}
+
+.btn{
+    background-color: #1a1a1a;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.listName{
+    color:#1a1a1a;
+    font-size: 14px;
+    font-weight: bold;
+}
+.listDate{
+    color:#9e9e9e;
+    font-size: 12px;
+}
+
+.icon{
+    color:#1a1a1a;
+    font-weight: bold;
+    font-size: 12px;
+}
+.listLbl{
+    color:#424242;
+    font-size: 12px;
+}

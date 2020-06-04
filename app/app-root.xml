@@ -1,0 +1,25 @@
+<BottomNavigation>
+    <TabStrip>
+        <TabStripItem class="navigation__item">
+            <Label text="Home" />
+            <Image src="~/images/ic_home.png" />
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="List" />
+            <Image src="~/images/ic_list.png" />
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="Email" />
+            <Image src="~/images/ic_mail.png" />
+        </TabStripItem>
+    </TabStrip>
+    <TabContentItem>
+        <Frame defaultPage="home/home-page" />
+    </TabContentItem>
+    <TabContentItem>
+        <Frame defaultPage="list/list-items-page" />
+    </TabContentItem>
+    <TabContentItem>
+        <Frame defaultPage="email/email-page" />
+    </TabContentItem>
+</BottomNavigation>

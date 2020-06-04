@@ -1,0 +1,18 @@
+<Page
+    navigatingTo="onNavigatingTo" 
+    loaded="onPageLoaded"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="black">
+        <Label class="whiteText" text="Export" />
+    </ActionBar>
+    
+    <StackLayout orientation="vertical" class="page__content">
+        <StackLayout orientation="vertical" class="formInput">
+            <Label class="frmLbl" text="Password" textWrap="true" />
+            <TextField class="frmInput" id="itf_unm" autocapitalizationType = "words" returnKeyType = "done" />
+            <Label class="errLbl" id="lbl_unm" text="" textWrap="true" />
+        </StackLayout>
+        <Button class="btn" text="Export" tap="{{ onTap }}" />
+    </StackLayout>
+</Page>

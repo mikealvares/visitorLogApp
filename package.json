@@ -25,7 +25,7 @@
   "devDependencies": {
     "eslint": "~5.8.0",
     "nativescript-dev-webpack": "~1.5.0",
-    "node-sass": "^4.7.1"
+    "node-sass": "^7.0.0"
   },
   "gitHead": "d8bdf0799a219051f28f8abd7c258d2bf2fce6e1",
   "readme": "NativeScript Application"
